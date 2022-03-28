@@ -1,3 +1,7 @@
+body {
+	background-color:rgb(145, 227, 255);
+}
+
 input[type=number]{
 	height: 3rem;
     font-size: 1.3rem;
@@ -7,11 +11,16 @@ input[type=number]{
 }
 
 #title{
+	border-style:solid;
+	border-width:1px black;
+	font-weight: bold;
 	font-size: 26px;
 	line-height: 75px;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .menu-object{
+	font-family:'Courier New', Courier, monospace;
 	display:block;
 	margin-left: auto;
 	margin-right: auto;
@@ -19,6 +28,22 @@ input[type=number]{
 	height: 75px;
 	font-size: 16px;
 	margin-top: 10px;
+	color: rgb(34, 34, 34);
+	
+	background-color: rgb(218, 203, 255);
+	border-radius: 25px;
+	border-style:solid 1px black;
+	/*background-image: linear-gradient(rgb(16, 0, 245), rgb(0, 138, 0));*/
+	transition-duration: 0.6s;
+}
+
+.menu-object:hover{
+	background-image: linear-gradient(rgb(170, 0, 85), rgb(53, 215, 255));
+	font-weight: bold;
+	border-style:dashed;
+	color:aliceblue;
+	text-shadow: 2px 2px #222222;
+	
 }
 
 p{
@@ -29,11 +54,13 @@ button.menu-object:active{
 	font-size: 18px;
 	width: 275px;
 	height: 70px;
+	
 }
 
 button.menu-object:hover:not(:active){
 	font-size: 22px;
 	width: 325px;
 	height: 85px;
+	
 }
 
