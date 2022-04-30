@@ -25,8 +25,8 @@ var options = function(){
 			num: function(value){
 				if (value < 2)
 					this.num = 2;
-				else if (value > 4)
-					this.num = 4;
+				else if (value > 6) //6 es el màxim
+					this.num = 6;
 			}
 		},
 		methods: { 
@@ -55,6 +55,18 @@ var options = function(){
 		}
 	}; 
 }();
+
+var numCards = { 
+	get numCartes() {
+		return options.getNumOfCards;
+	}
+}
+
+var dificultat = { 
+	get dificultat() {
+		return options.getDificulty;
+	}
+}
 
 
 
