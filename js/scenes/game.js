@@ -179,6 +179,7 @@ class GameScene extends Phaser.Scene {
 							Vue.set(this.current_card, i, {done: false, texture: back});
 							Vue.set(this.current_card, i_front, {done: false, texture: back});
 						}
+						//
 						*/
 						if (this.dificultat=="easy") {
 							this.score -= 10;
