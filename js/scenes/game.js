@@ -5,7 +5,7 @@ class GameScene extends Phaser.Scene {
 		this.firstClick = null;
 		this.score = 100;
 		this.correct = 0;
-		this.numCartes = numCards.numCartes;
+		this.numCartes = numCards.numCartes();
     }
 
     preload (){	
