@@ -20,7 +20,7 @@ class GameScene extends Phaser.Scene {
 	
     create (){
 		if (this.numCartes <=2) { //si hi ha 2 cartes
-			let arraycards = ['co', 'sb', 'co', 'sb'];
+			var arraycards = ['co', 'sb', 'co', 'sb'];
 			this.cameras.main.setBackgroundColor(0xBFFCFF);
 			
 			this.add.image(250, 300, arraycards[0]);
@@ -35,37 +35,37 @@ class GameScene extends Phaser.Scene {
 			this.cards.create(450, 300, 'back');
 			this.cards.create(550, 300, 'back');
 		} else if (this.numCartes == 3) { //si hi ha 3
-			let arraycards = ['co', 'cb', 'sb', 'co', 'cb', 'sb'];
+			var arraycards = ['co', 'cb', 'sb', 'co', 'cb', 'sb'];
 			this.cameras.main.setBackgroundColor(0xBFFCFF);
 			
 			this.add.image(250, 300, arraycards[0]);
 			this.add.image(350, 300, arraycards[1]);
 			this.add.image(450, 300, arraycards[2]);
-			this.add.image(550, 300, arraycards[3]);
-			this.add.image(450, 300, arraycards[4]);
-			this.add.image(550, 300, arraycards[5]);
+			this.add.image(250, 450, arraycards[3]);
+			this.add.image(350, 450, arraycards[4]);
+			this.add.image(450, 450, arraycards[5]);
 			
 			this.cards = this.physics.add.staticGroup();
 			
 			this.cards.create(250, 300, 'back');
 			this.cards.create(350, 300, 'back');
 			this.cards.create(450, 300, 'back');
-			this.cards.create(550, 300, 'back');
-			this.cards.create(650, 300, 'back');
-			this.cards.create(750, 300, 'back');
+			this.cards.create(250, 450, 'back');
+			this.cards.create(350, 450, 'back');
+			this.cards.create(450, 450, 'back');
 
 		} else if (this.numCartes == 4) { //si hi ha 4
-			let arraycards = ['co', 'cb', 'sb', 'so', 'co', 'cb', 'sb', 'so'];
+			var arraycards = ['co', 'cb', 'sb', 'so', 'co', 'cb', 'sb', 'so'];
 			this.cameras.main.setBackgroundColor(0xBFFCFF);
 			
 			this.add.image(250, 300, arraycards[0]);
 			this.add.image(350, 300, arraycards[1]);
 			this.add.image(450, 300, arraycards[2]);
 			this.add.image(550, 300, arraycards[3]);
-			this.add.image(450, 300, arraycards[4]);
-			this.add.image(550, 300, arraycards[5]);
-			this.add.image(550, 300, arraycards[6]);
-			this.add.image(550, 300, arraycards[7]);
+			this.add.image(250, 450, arraycards[4]);
+			this.add.image(350, 450, arraycards[5]);
+			this.add.image(450, 450, arraycards[6]);
+			this.add.image(550, 450, arraycards[7]);
 			
 			this.cards = this.physics.add.staticGroup();
 			
@@ -73,25 +73,25 @@ class GameScene extends Phaser.Scene {
 			this.cards.create(350, 300, 'back');
 			this.cards.create(450, 300, 'back');
 			this.cards.create(550, 300, 'back');
-			this.cards.create(650, 300, 'back');
-			this.cards.create(750, 300, 'back');
-			this.cards.create(850, 300, 'back');
-			this.cards.create(950, 300, 'back');
+			this.cards.create(250, 450, 'back');
+			this.cards.create(350, 450, 'back');
+			this.cards.create(450, 450, 'back');
+			this.cards.create(550, 450, 'back');
 			
 		} else if (this.numCartes == 5) { //si hi ha 5
-			let arraycards = ['co', 'cb', 'sb', 'so', 'tb', 'co', 'cb', 'sb', 'so', 'tb'];
+			var arraycards = ['co', 'cb', 'sb', 'so', 'tb', 'co', 'cb', 'sb', 'so', 'tb'];
 			this.cameras.main.setBackgroundColor(0xBFFCFF);
 			
 			this.add.image(250, 300, arraycards[0]);
 			this.add.image(350, 300, arraycards[1]);
 			this.add.image(450, 300, arraycards[2]);
 			this.add.image(550, 300, arraycards[3]);
-			this.add.image(450, 300, arraycards[4]);
-			this.add.image(550, 300, arraycards[5]);
-			this.add.image(550, 300, arraycards[6]);
-			this.add.image(550, 300, arraycards[7]);
-			this.add.image(550, 300, arraycards[8]);
-			this.add.image(550, 300, arraycards[9]);
+			this.add.image(650, 300, arraycards[4]);
+			this.add.image(250, 450, arraycards[5]);
+			this.add.image(350, 450, arraycards[6]);
+			this.add.image(450, 450, arraycards[7]);
+			this.add.image(550, 450, arraycards[8]);
+			this.add.image(650, 450, arraycards[9]);
 			
 			this.cards = this.physics.add.staticGroup();
 			
@@ -100,27 +100,27 @@ class GameScene extends Phaser.Scene {
 			this.cards.create(450, 300, 'back');
 			this.cards.create(550, 300, 'back');
 			this.cards.create(650, 300, 'back');
-			this.cards.create(250, 700, 'back');
-			this.cards.create(350, 700, 'back');
-			this.cards.create(450, 700, 'back');
-			this.cards.create(550, 700, 'back');
-			this.cards.create(650, 700, 'back');
+			this.cards.create(250, 450, 'back');
+			this.cards.create(350, 450, 'back');
+			this.cards.create(450, 450, 'back');
+			this.cards.create(550, 450, 'back');
+			this.cards.create(650, 450, 'back');
 		} else if (this.numCartes == 6) { //si hi ha 6 (MAX.)
-			let arraycards = ['co', 'cb', 'sb', 'so', 'tb', 'to', 'co', 'cb', 'sb', 'so', 'tb', 'to'];
+			var arraycards = ['co', 'cb', 'sb', 'so', 'tb', 'to', 'co', 'cb', 'sb', 'so', 'tb', 'to'];
 			this.cameras.main.setBackgroundColor(0xBFFCFF);
 			
 			this.add.image(250, 300, arraycards[0]);
 			this.add.image(350, 300, arraycards[1]);
 			this.add.image(450, 300, arraycards[2]);
 			this.add.image(550, 300, arraycards[3]);
-			this.add.image(450, 300, arraycards[4]);
-			this.add.image(550, 300, arraycards[5]);
-			this.add.image(550, 300, arraycards[6]);
-			this.add.image(550, 300, arraycards[7]);
-			this.add.image(550, 300, arraycards[8]);
-			this.add.image(550, 300, arraycards[9]);
-			this.add.image(550, 300, arraycards[10]);
-			this.add.image(550, 300, arraycards[11]);
+			this.add.image(650, 300, arraycards[4]);
+			this.add.image(750, 300, arraycards[5]);
+			this.add.image(250, 450, arraycards[6]);
+			this.add.image(350, 450, arraycards[7]);
+			this.add.image(450, 450, arraycards[8]);
+			this.add.image(550, 450, arraycards[9]);
+			this.add.image(650, 450, arraycards[10]);
+			this.add.image(750, 450, arraycards[11]);
 			
 			this.cards = this.physics.add.staticGroup();
 			
@@ -130,12 +130,12 @@ class GameScene extends Phaser.Scene {
 			this.cards.create(550, 300, 'back');
 			this.cards.create(650, 300, 'back');
 			this.cards.create(750, 300, 'back');
-			this.cards.create(250, 700, 'back');
-			this.cards.create(350, 700, 'back');
-			this.cards.create(450, 700, 'back');
-			this.cards.create(550, 700, 'back');
-			this.cards.create(650, 700, 'back');
-			this.cards.create(750, 700, 'back');
+			this.cards.create(250, 450, 'back');
+			this.cards.create(350, 450, 'back');
+			this.cards.create(450, 450, 'back');
+			this.cards.create(550, 450, 'back');
+			this.cards.create(650, 450, 'back');
+			this.cards.create(750, 450, 'back');
 
 		}
 		
